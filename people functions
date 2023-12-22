@@ -1,0 +1,66 @@
+//Fetch and Read data the people.json disk file 
+const VactionPayRate = 0.04;
+
+fetch('./people.json')
+  .then(response => response.json())
+  .then(data => {
+    //Create a container for the people file data
+    const container = document.createElement('div');
+    container.id = 'peopleContainer';
+   // Loop through an array in the JSON data file
+        data.forEach(person => {
+   // Create a new div for each person
+        const personDiv = document.createElement('div');
+        personDiv.className = 'person';
+   // Add the person's data to the div
+        personDiv.innerHTML = `
+      <h3>${getOccupation(person)}</h3>
+      <p>${getBirthday(person)}</p>
+      <p>${getAge(person)}</p>
+      <p>${getSalary(person)}</p>
+      <p>Yearly vaction pay: ${Vactionpay(person)}
+      `;
+    
+
+    // Add the peron's data to the div
+    container.appendChild(personDiv);
+    // Also log the data to the console
+    console.log(getOccupation(person));
+    console.log(getBirthday(person));
+    console.log(getAge(person));
+    console.log(getSalary(person));
+    console.log(Vactionpay(person));
+});
+
+    // Add the container to the body of the HTML
+    document.body.appendChild(personDiv);
+})
+    
+    .catch(error => {
+    // Handles any errors that may occur while fetching the file
+    console.error(error);
+});
+
+    function getBirthday(person){
+return `${person.fname}'s Birthday is ${(person.birthday).getMonth(),getDay()}`; 
+} 
+ 
+
+    function getAge(person){
+return `${person.fname} is currently ${new Date().getFullYear() - new Date(person.birthday).getFullYear()} years old.`; 
+}
+
+
+    function getOccupation(person){
+return `${person.fname}'s Occupation is ${person.Occupation}`;
+}
+
+
+    function getSalary(person){
+return person.salary;
+}
+
+    function Vactionpay(person){
+return person.salary * VactionPayRate;
+}
+

@@ -1,0 +1,8 @@
+[
+{"fname": "Hendrickson", "lname": "Hubert", "Gender": "Male", "Religon": "Catholic", "Occupation": "Custodian", "Salary": "40000", "Birthday": "09/21/2002", "Education level": "High school"},
+{"fname": "Theodore", "lname": "Thompson", "Gender": "Undisclosed", "Religon": "Atheist", "Occupation": "Doctor", "Salary": "65000", "Birthday": "04/10/1996", "Education level": "University"},
+{"fname": "Nora", "lname": "Keen", "Gender": "Female", "Religon": "Christian", "Occupation": "Director of climate data analysts", "Salary": "87000", "Date of Birth": "10/29/1994", "Education level": "College"},
+{"fname": "Samuel", "lname": "King", "Gender": "Male", "Religon": "Catholic", "Occupation": "Musician", "Salary": "59000", "Birthday": "07/13/1987", "Education level":"High school"},
+{"fname": "Andre", "lname": "Parson", "Gender": "Male", "Religon": "Buddist", "Occupation": "Painter", "Salary": "38000", "Birthday": "01/15/2004", "Education level": "Tradeschool"},
+{"fname": "Kiki", "lname": "Brighton", "Gender": "Female", "Religon": "Anglican", "Occupation": "Naval Commander", "Salary": "74000", "Birthday": "03/27/1980", "Education level": "College"}
+]
