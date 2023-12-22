@@ -21,8 +21,7 @@ fetch('./people.json')
       <p>Yearly vaction pay: ${Vactionpay(person)}
       `;
     
-
-    // Add the peron's data to the div
+    // Add the person's data to the div
     container.appendChild(personDiv);
     // Also log the data to the console
     console.log(getOccupation(person));
